@@ -47,6 +47,7 @@ class MainActivity : AppCompatActivity() {
             val li = context.getSystemService(Context.LAYOUT_INFLATER_SERVICE) as LayoutInflater
 
             val itemView = contextView ?: li.inflate(R.layout.list_item_color, parent, false)
+//          val itemView = li.inflate(R.layout.list_item_color, parent, false)          // always creates a new View Object and do not use previously created View object
 
             val id = nums[position]
             val colorName = cols[position % cols.size]
