@@ -52,8 +52,8 @@ class MainActivity : AppCompatActivity() {
             val colorName = cols[position % cols.size]
             val color = Color.parseColor(colorName)
 
-            itemView.llColorBox.setBackgroundColor(color)
-            itemView.tvColor.text = colorName
+            itemView.tvColor.setBackgroundColor(color)
+            itemView.tvColorText.text = colorName
             itemView.tvId.text = id.toString()
 
             return itemView
